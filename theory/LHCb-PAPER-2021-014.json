@@ -1,0 +1,21 @@
+{
+    "reference" : "https://arxiv.org/abs/1501.00367",
+    "authors"   : "R. R. Horgan, Z. Liu, S. Meinel, M. Wingate",
+    "reference2": "http://arxiv.org/abs/1503.05534",
+    "authors2"  : "A. Bharucha, D. M. Straub, and R. Zwicky" ,
+    "reference3": "http://arxiv.org/abs/hep-ph/0412079",
+    "authors3"  : "P. Ball and R. Zwicky",
+    "reference4": "http://arxiv.org/abs/1411.3161",
+    "authors4"  : "W. Altmannshofer and D. M. Straub",
+    "comment"   : "Bs->phimumu predictions from FLAVIO 1810.08132 in PAPER-2021-014. Units of 10^-7",
+    "date"      : "30/04/2021", 
+    "dBr/dq2" : [ 
+        [ 0.1, 0.98, 1.131, 0.117,0.117  ],
+        [ 1.1, 2.5,  0.543, 0.063, 0.063 ],
+        [ 2.5, 4.0,  0.514, 0.065, 0.065 ],
+        [ 4.0, 6.0,  0.550, 0.070,0.070  ],
+        [ 6.0, 8.0,  0.615, 0.082, 0.082 ],
+        [15.0,19.0,  0.574, 0.067, 0.067 ],
+	[ 1.1, 6.0,  0.537, 0.066, 0.066 ]
+    ]
+}

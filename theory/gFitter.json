@@ -1,0 +1,9 @@
+{
+    "reference" : "https://arxiv.org/abs/1803.01853",
+    "authors"   : "gFitter",
+    "comment"   : "EW fit",
+    "date"      : "05/03/2018", 
+    "Z_AFB" : [ 
+        [ 8100,8100,0.1034,0.0003,0.0003 ]
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "reference" : "Private communication",
+    "authors"   : "Diego Martinez Santos",
+    "comment"   : "2021 LHC B->mumu combination. Units of 10^-9",
+    "date"      : "24/03/2021", 
+    "BF" : [ 
+        [ 27.87,27.87, 0.061, 0.056, 0.052 ],
+        [ 28.79,28.79, 2.85, 0.34, 0.31 ]
+    ]
+}

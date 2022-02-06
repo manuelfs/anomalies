@@ -1,0 +1,23 @@
+{
+    "reference0" : "HFlav 2021",
+    "authors0"  : "HFlav",
+    "date0"      : "01/01/2021",
+    "R(D*)" : [
+	[ -1, -1, 0.252, 0.005, 0.005 ]
+    ],
+    "R(D)" : [
+	[ -1, -1, 0.298, 0.003, 0.003 ]
+    ],
+    "reference2" : "https://arxiv.org/abs/2007.06956",
+    "date2" : "14/07/2020",
+    "authors2" : "HPQCD",
+    "R(J/psi)" : [
+	 [ -1, -1, 0.2582, 0.0038, 0.0038 ]
+    ],
+    "reference3" : "https://arxiv.org/abs/1812.07593.",
+    "date3" : "18/12/2018",
+    "authors3" : "Bernlochner, Ligeti, Robinson, Sutcliffe",
+    "R(Lc)" : [
+	[ -1, -1, 0.324, 0.004, 0.004 ]
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "reference" : "https://arxiv.org/abs/1909.11087",
+    "authors"   : "Luca Di Luzio, Matthew Kirk, Alexander Lenz, Thomas Rauh",
+    "comment"   : "Delta ms expectation",
+    "date"      : "24/09/2019", 
+    "Delta m" : [ 
+        [ 27.87,27.87, 0.533, 0.022, 0.036 ],
+        [ 28.79,28.79, 18.4, 0.7, 1.2 ]
+    ]
+}

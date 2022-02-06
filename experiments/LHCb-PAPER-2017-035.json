@@ -1,0 +1,9 @@
+{
+    "reference" : "LHCb-PAPER-2017-035",
+    "authors"   : "LHCb",
+    "comment"   : "R(J/psi)",
+    "date"      : "15/11/2017",
+    "R(J/psi)" : [
+	[ -1, -1, 0.71, 0.17, 0.17,  0.18, 0.18 ]
+    ]
+}

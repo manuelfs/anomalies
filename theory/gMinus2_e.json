@@ -1,0 +1,9 @@
+{
+    "reference" : "https://arxiv.org/abs/1412.8284",
+    "authors"   : "Aoyama",
+    "comment"   : "Electron g-2. Numbers from wikipedia.",
+    "date"      : "11/03/2015", 
+    "g-2" : [ 
+        [ -1,-1, 1159652181643,764,764,0,0 ]
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "reference" : "LHCb-PAPER-2017-017",
+    "authors"   : "LHCb",
+    "comment"   : "R(D*) LHCb average",
+    "date"      : "29/08/2017",
+    "R(D*)" : [
+	[ -1, -1, 0.309, 0.016, 0.016,  0.024, 0.024 ]
+    ]
+}

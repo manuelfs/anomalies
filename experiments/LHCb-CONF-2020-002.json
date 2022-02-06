@@ -1,0 +1,10 @@
+{
+    "reference" : "https://cds.cern.ch/record/2727216",
+    "authors"   : "ATLAS, CMS, LHCb",
+    "comment"   : "2020 LHC Bs->mumu combination",
+    "date"      : "10/08/2020", 
+    "BF" : [ 
+        [ 27.87,27.87,0.06,0.07,0.07 ],
+        [ 28.79,28.79,2.69, 0.37, 0.35 ]
+    ]
+}

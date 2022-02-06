@@ -1,0 +1,9 @@
+{
+    "reference" : "https://arxiv.org/abs/hep-ex/0509008",
+    "authors"   : "LEP EW",
+    "comment"   : "LEP combination",
+    "date"      : "07/09/2005", 
+    "Z_AFB" : [ 
+        [ 8100,8100,0.0992,0.0016,0.0016 ]
+    ]
+}

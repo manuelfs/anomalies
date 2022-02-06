@@ -1,0 +1,9 @@
+{
+    "reference" : "https://arxiv.org/abs/2006.04822",
+    "authors"   : "Aoyama",
+    "comment"   : "Muon g-2",
+    "date"      : "08/06/2008", 
+    "g-2" : [ 
+        [ -1,-1, 116591810, 41, 41 ]
+    ]
+}

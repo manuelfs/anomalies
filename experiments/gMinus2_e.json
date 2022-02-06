@@ -1,0 +1,9 @@
+{
+    "reference" : "https://arxiv.org/abs/1009.4831",
+    "authors"   : "Electron e-2",
+    "comment"   : "Electron g-2. Numbers from wikipedia.",
+    "date"      : "24/09/2010", 
+    "g-2" : [ 
+        [ -1,-1, 1159652180730, 280, 280, 0, 0]
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "reference" : "",
+    "authors"   : "Muon g-2",
+    "comment"   : "Muon g-2 average",
+    "date"      : "07/04/2021", 
+    "g-2" : [ 
+        [ -1,-1, 116592061, 41, 41, 0, 0]
+    ],
+    "significance" : [ 4.24 ]
+}

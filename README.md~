@@ -1,0 +1,25 @@
+**b->lls plots**
+
+Set of plots of b->lls observables. All data is public and so anyone could make these plots (except when I update them a bit prior to LHCb releasing a new result). Feel free to use them. Several of them are used in [Scholarpedia](http://www.scholarpedia.org/article/Rare_decays_of_b_hadrons)
+
+author: Patrick Koppenburg based on code by Tom Blake
+
+Citation: Patrick Koppenburg, "Flavour Anomalies", https://www.nikhef.nl/~pkoppenb/anomalies.html
+
+Contact me to get versions without a watermark.
+
+Or just git clone and make.
+
+Please report any mistakes.
+
+**Documentation**
+- `BllXs/AnomaliesPlot.*` : Pulls of observables of interest. The theory prediction is shifted to zero and then teh experimental value scaled by the quadratic sume of theory and experimental uncertainty. That gives a naïve pull. When significances are given in the original publication, that is used instead. See [Anomalies.md](BllsXs/Anomalies.md) for a list of references.
+- `BllXs/B2llKstar-*` : Observables in B->K*ll decays versus q^2. 
+- `BllXs/B2llKstar-*-average` : My own averages of B->K*ll decays versus q^2. 
+- `BllXs/B2llKstar-*-with-average` : The data with my own averages of B->K*ll decays versus q^2. 
+- `BllXs/Bd2llKstar-*` : As above, but only with B0 
+- `BllXs/Bu2llKstar-*` : As above, but only with B+ 
+- `RX/Blls-R*` : RX plots versus q^2. Wide bins are displayed in dotted lines.
+- `RX/Blls-R*-NoDerived` : RX plots versus q^2 excluding wide bins.
+- `RX/Error_on_*` : My own prediction on how the uncertainties will scale in the future. 
+- `TomBlake/*` : Original plots by Tom Blake.

@@ -1,0 +1,10 @@
+{
+    "reference" : "https://arxiv.org/abs/2103.13370",
+    "authors"   : "Altmannshofer, Stangl",
+    "comment"   : "2021 LHC B->mumu combination",
+    "date"      : "24/03/2021", 
+    "BF" : [ 
+        [ 27.87,27.87, 0.056, 0.070, 0.070 ],
+        [ 28.79,28.79, 2.93, 0.35, 0.35 ]
+    ]
+}

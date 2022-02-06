@@ -1,0 +1,10 @@
+{
+    "reference" : "LHCb-PAPER-2021-005",
+    "authors"   : "LHCb",
+    "comment"   : "Delta ms, md average (PDG for md)",
+    "date"      : "01/04/2021", 
+    "Delta m" : [ 
+        [ 27.87,27.87, 0.5065, 0.0019,  0.0019],
+        [ 28.79,28.79, 17.7656, 0.0057, 0.0057 ]
+    ]
+}

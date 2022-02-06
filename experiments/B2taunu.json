@@ -1,0 +1,9 @@
+{
+    "reference" : "PDG",
+    "authors"   : "Belle and BaBar",
+    "comment"   : "B->taunu average of Belle and BaBar. In 10^-4",
+    "date"      : "01/07/2021", 
+    "BF" : [ 
+        [ 27.87,27.87, 1.09, 0.24, 0.24 ]
+    ]
+}

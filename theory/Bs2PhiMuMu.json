@@ -1,0 +1,10 @@
+{
+    "reference" : "https://arxiv.org/abs/1501.00367",
+    "authors"   : "R. R. Horgan, Z. Liu, S. Meinel, M. Wingate",
+    "ref"       : "Proceedings of Science (LATTICE2014) 372",
+    "comment"   : "Bs->phimumu",
+    "date"      : "02/01/2015", 
+    "dBr/dq2" : [ 
+        [ 1.0,6.0,0.537,0.066,0.066 ]
+    ]
+}

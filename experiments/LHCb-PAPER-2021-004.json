@@ -1,0 +1,10 @@
+{
+    "reference" : "https://arxiv.org/abs/2103.11769",
+    "authors"   : "LHCb",
+    "comment"   : "R_K, 2011-18",
+    "date"      : "01/03/2021", 
+    "R_K" : [ 
+        [ 1.1,6.0,0.846,0.042,0.039,0.013,0.012 ]
+    ],
+    "significance" : [ 3.1 ]
+}

@@ -1,0 +1,11 @@
+{
+    "reference" : "https://arxiv.org/abs/1908.07011",
+    "authors"   : "M. Beneke, C. Bobeth, and R. Szafron",
+    "ref"       : "JHEP 10 (2019) 232",
+    "comment"   : "B(s)->mumu",
+    "date"      : "19/08/2019", 
+    "BF" : [ 
+        [ 27.87,27.87, 0.103,0.005,0.005 ],
+        [ 28.79,28.79, 3.66, 0.14,0.14 ]
+    ]
+}
