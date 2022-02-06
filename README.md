@@ -1,4 +1,5 @@
-** Plots for the B anomalies
+Significances of the B anomalies
+=================================
 
 Forked from Patrick Koppenburg, https://gitlab.cern.ch/pkoppenb/bllsplots on Jan 6, 2022. Also, "Flavour Anomalies", https://www.nikhef.nl/~pkoppenb/anomalies.html
 

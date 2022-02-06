@@ -128,12 +128,12 @@ def plotTheory( data, name, ax):
     # return format to build the legend manually
     return patches.Patch(color=colour, label=name)
 
-def muPoints(exp,theo):
+def muPoints(exp,theo,signed=False):
     """
     rescale experiment and theory to get a strength
     """
     theoOffset = theo.obs                               # offset to zero
-    if exp.obs>theo.obs:
+    if exp.obs>theo.obs or signed:
         scale  = np.sqrt(((exp.totError()[0][0])**2)+(theo.totError()[1][0])**2)
         newT = Q2point(theo.q2low,theo.q2high,0.,theo.StatUp/scale,theo.StatDown/scale)
         newE = Q2point(exp.q2low,exp.q2high,(exp.obs-theoOffset)/scale,exp.StatUp/scale,exp.StatDown/scale,exp.SystUp/scale,exp.SystDown/scale)
@@ -145,12 +145,15 @@ def muPoints(exp,theo):
     if exp.significance:
         # print("Using significance {0} instead of computed pull {1}".format(exp.significance, newE.obs))
         newE.obs = exp.significance
+        if signed: newE.obs *= np.sign(exp.obs-theoOffset)
 
 #    print("offset {0} and scale {1}".format(theoOffset,scale))
 #    print("theory {0} and exp {1}".format(theo,exp))
 #    print("become {0} and     {1}".format(newT,newE))
     return newE,newT
 
+def signedMuPoints(exp,theo):
+    return muPoints(exp,theo,True)
 
 ########################################################################################
 
