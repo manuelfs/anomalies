@@ -133,7 +133,7 @@ def muPoints(exp,theo,signed=False):
     rescale experiment and theory to get a strength
     """
     theoOffset = theo.obs                               # offset to zero
-    if exp.obs>theo.obs or signed:
+    if exp.obs>theo.obs:
         scale  = np.sqrt(((exp.totError()[0][0])**2)+(theo.totError()[1][0])**2)
         newT = Q2point(theo.q2low,theo.q2high,0.,theo.StatUp/scale,theo.StatDown/scale)
         newE = Q2point(exp.q2low,exp.q2high,(exp.obs-theoOffset)/scale,exp.StatUp/scale,exp.StatDown/scale,exp.SystUp/scale,exp.SystDown/scale)
@@ -141,7 +141,9 @@ def muPoints(exp,theo,signed=False):
         scale  = np.sqrt(((exp.totError()[1][0])**2)+(theo.totError()[0][0])**2)
         newT = Q2point(theo.q2low,theo.q2high,0.,theo.StatDown/scale,theo.StatUp/scale)
         newE = Q2point(exp.q2low,exp.q2high,-(exp.obs-theoOffset)/scale,exp.StatDown/scale,exp.StatUp/scale,exp.SystDown/scale,exp.SystUp/scale)
-
+    if signed:
+        newT = Q2point(theo.q2low,theo.q2high,0.,theo.StatUp/scale,theo.StatDown/scale)
+        newE = Q2point(exp.q2low,exp.q2high,(exp.obs-theoOffset)/scale,exp.StatUp/scale,exp.StatDown/scale,exp.SystUp/scale,exp.SystDown/scale)
     if exp.significance:
         # print("Using significance {0} instead of computed pull {1}".format(exp.significance, newE.obs))
         newE.obs = exp.significance
