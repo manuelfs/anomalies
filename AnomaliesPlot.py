@@ -26,7 +26,7 @@ P5        = 'P5'
 
 ############################################
 
-def drawTwoPoints(plt,labels,pts,cmarker='b',yoffset=0.04):
+def drawTwoPoints(plt,labels,pts,cmarker='b',yoffset=0.0):
     """
     Draw experiment and theory
     """
@@ -45,29 +45,29 @@ def anomaliesPlot(blocks=['dimuons'],watermark=True,LHCbOnly=False):
         for i in blocks: add += "-"+i
     
     fig, ax = plt.subplots(figsize=(7,6))
-    fig.subplots_adjust(top=0.98,right=0.98,bottom=0.1,left=0.33)
+    fig.subplots_adjust(top=0.98,right=0.98,bottom=0.12,left=0.33)
 
     labels = [ '' ]
  
     ### RK and RKstar
     RKs2021 = getObservable( 'R_Ks', "experiments/LHCb-PAPER-2021-038.json" )
     RK2021 = getObservable( 'R_K', "experiments/LHCb-PAPER-2021-004.json" )
-    RKstar2021 = getObservable( "R_K*+", "experiments/LHCb-PAPER-2021-038.json" )
+    RKstar2021 = getObservable( "R_K*+", "experiments/LHCb-PAPER-2021-038_RKstp.json" )
     RKstar2017 = getObservable( "R_K*", "experiments/LHCb-PAPER-2017-013.json" )
     RKstarT = getObservable( "R_K*", "theory/RKstar.json" )
     RKT = getObservable( "R_K", "theory/RKstar.json" )
-    RpK = getObservable( "R_pK^-1", "experiments/LHCb-PAPER-2019-040.json" )
+    RpK = getObservable( "R_pK", "experiments/LHCb-PAPER-2019-040.json" )
 #    print("RK {0}".format(RK2021[0]))
-    labels += ['$R_K\ [1.1,6]$']
+    labels += ['$R_{K^+}\ [1.1,6]$']
     drawTwoPoints(plt,labels,signedMuPoints(RK2021[0],RKT[0]))
     labels += ['$R_{K_{\\rm S}^0}\ [1.1,6]$']
     drawTwoPoints(plt,labels,signedMuPoints(RKs2021[0],RKT[0]))
-    labels += [ '$R_{K^{*+}}\ [0.045,1.1]$' ]
+    labels += [ '$R_{K^{*+}}\ [0.045,6]$' ]
+    drawTwoPoints(plt,labels,signedMuPoints(RKstar2021[0],RKstarT[0]))
+    labels += ['$R_{K^{*0}}\ [0.045,1.1]$']
     drawTwoPoints(plt,labels,signedMuPoints(RKstar2017[0],RKstarT[0]))
     labels += [ '$R_{K^{*0}}\ [1.1,6]$' ]
     drawTwoPoints(plt,labels,signedMuPoints(RKstar2017[1],RKstarT[1]))
-    labels += ['$R_{K^{*0}}\ [0.045,6]$']
-    drawTwoPoints(plt,labels,signedMuPoints(RKstar2021[0],RKstarT[1]))
     labels += [ '$R_{pK}\ [0.1,6]$' ]
     drawTwoPoints(plt,labels,signedMuPoints(RpK[0],Q2point(0.1,6.0,1.,1e-2,1e-2)))
      
@@ -181,7 +181,7 @@ def anomaliesPlot(blocks=['dimuons'],watermark=True,LHCbOnly=False):
     ax.set_yticklabels(labels)
     ax.set_xlim(-nsigma,nsigma)
     ax.grid(axis='x')
-    plt.xlabel('Pull [$\sigma$]')
+    plt.xlabel('Pull [$\sigma_{tot}$]')
 
     #print(f'{add}: {ax.get_yticks()} ticks. y lim: {ll[1]}, {ll[0]}. {nL} labels : {labels}') 
 
